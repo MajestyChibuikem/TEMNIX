@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-    /* background-image: url(../img/hero-bg.jpg); */
+    /* background-image: url(https://res.cloudinary.com/dulaczrnd/image/upload/v1761810623/temnix/hero-bg.jpg); */
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
