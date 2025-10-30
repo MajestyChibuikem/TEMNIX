@@ -1,0 +1,33 @@
+{
+  "name": "Temnix - Software Agency",
+  "short_name": "Temnix",
+  "description": "Forward-thinking tech company specializing in innovative software solutions and seamless digital experiences",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101010",
+  "theme_color": "#101010",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dulaczrnd/image/upload/w_192,h_192,c_fill/v1761810396/temnix/temnix-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/dulaczrnd/image/upload/w_512,h_512,c_fill/v1761810396/temnix/temnix-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/dulaczrnd/image/upload/v1761810266/temnix/clean-browser-mockup_5.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
