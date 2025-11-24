@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GoHub - Catholic Prayer App - Temnix</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_16,h_16,c_fill/v1761810396/temnix/temnix-logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_32,h_32,c_fill/v1761810396/temnix/temnix-logo.png">
@@ -17,12 +17,13 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="/css/project-details.css">
     <link rel="stylesheet" href="/responsive_css_files/project-details-responsive.css">
+    <link rel="stylesheet" href="/css/project-slider.css">
 </head>
 <body>
     <div class="top">
         <nav>
             <div class="logo" onclick="window.location.href='/index.html'">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810396/temnix/temnix-logo.png" alt="Temnix Logo">
+                <img src="img/temnix-logo.png" alt="Temnix Logo">
                 <p>temnix</p>
             </div>
             <div class="links">
@@ -32,7 +33,7 @@
                 <a href="/pages/contact.html">Contact</a>
                 <div class="drop-btn">
                     <a href="#">More</a>
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810172/temnix/angle-down.svg" alt="Dropdown arrow">
+                    <img src="img/angle-down.svg" alt="Dropdown arrow">
                     <div class="extra-nav">
                         <a href="/pages/error.html">Pricing</a>
                         <a href="/pages/error.html">Blogs</a>
@@ -40,17 +41,17 @@
                 </div>  
             </div>
             <div class="contact-btn">
-                <a href="pages/contact.html"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810200/temnix/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
+                <a href="pages/contact.html"><img src="img/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
                 <a href="/pages/contact.html" style="color: black;">
                     <div class="btn" onclick="window.location.href='/pages/contact.html'">
                         <span class="top"></span>
                         <span class="bottom"></span>
-                        <p>Contact <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        <p>Contact <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                     </div>
                 </a>
                 <div class="menu">
                     <div class="menu-btn" id="menubtn">
-                        <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810365/temnix/menu-svgrepo-com_1.svg" alt="Menu icon">
+                        <img src="img/menu-svgrepo-com (1).svg" alt="Menu icon">
                     </div>
                 </div>
             </div>
@@ -59,8 +60,8 @@
         
         <div class="hero">
             <div class="header">
-                <h1>GOHUB</h1>
-                <p>GoHub is a react-native app that organizes hymns and prayers, helping users access daily worship content by the day of the week.</p>
+                <h1>GOHUB - CATHOLIC PRAYER COMPANION</h1>
+                <p>A comprehensive Catholic prayer and hymn companion app built with React Native. GoHub organizes daily prayers, hymns, and devotional content by day of the week, making it easy for Catholics to maintain their spiritual practice with accessible, offline-ready worship resources.</p>
             </div>
         </div>
     </div>
@@ -75,32 +76,46 @@
         <div class="btn" onclick="window.location.href='/pages/contact.html'" style="margin-top: 10px;">
             <span class="top"></span>
             <span class="bottom"></span>
-            <p>Contact <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+            <p>Contact <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
         </div>
     </div>
 
     <div class="project-details">
-        <div class="image">
-            <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810388/temnix/samsung-galaxy-s20-perspective-mockup.png" alt="GoHub mobile app screenshot" loading="lazy">
+        <div class="project-slider" id="goHubSlider">
+            <div class="slider-container">
+                <div class="slider-images"></div>
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Previous image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Next image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="slider-dots"></div>
+            <div class="slider-counter"></div>
         </div>
 
         <div class="project-content">
             <div class="left">
                 <h2>Project Overview</h2>
-                <p>Gohub is a digital platform designed to organize and provide easy access to hymns and prayers for daily spiritual growth. Tailored for Godfrey Okoye University, it offers a structured way to view prayers and songs by day and occasion. With a clean interface, users can explore, search, and follow along with worship content, ensuring a seamless spiritual experience. Gohub enhances devotional practices, making it simple to stay connected and engaged in prayer anytime, anywhere, directly from a mobile device.</p>
+                <p>GoHub is a React Native mobile application designed to support Catholic worship and spiritual practice. The app provides a comprehensive collection of hymns, prayers, and devotional content organized by the liturgical calendar and days of the week. Users can access daily prayers, browse hymn collections, view prayer texts, and engage with spiritual content tailored to their worship needs. The offline-first architecture ensures that users can access their prayers and hymns anytime, anywhere, without requiring an internet connection. With an intuitive interface and organized content structure, GoHub makes it easy for Catholics to maintain their prayer life and participate in worship both individually and communally.</p>
 
                 <h2>Scope of Work</h2>
                 <p>Gohub streamlines access to daily prayers and hymns, offering a structured platform for spiritual engagement. It enhances worship by organizing content by day and occasion, fostering consistency, accessibility, and a deeper connection to faith for Godfrey Okoye University’s community and beyond. <br><br>Outline of the services provided, such as strategy, design, development, branding, or marketing include:</p>
 
                 <ul>
                     <li>
-                        <p><b>Content Organization:</b> Structured categorization of prayers and hymns by day, time, and occasion.</p>
+                        <p><b>Organized Prayer Content:</b> Daily prayers, hymns, and devotional content organized by day of the week and liturgical calendar for easy access to appropriate worship materials.</p>
                     </li>
                     <li>
-                        <p><b>User Engagement:</b> Personalized spiritual journey through daily prayer reminders and interactive features.</p>
+                        <p><b>React Native Mobile App:</b> Cross-platform mobile application with offline-first architecture, smooth navigation, and responsive design optimized for iOS and Android devices.</p>
                     </li>
                     <li>
-                        <p><b>Seamless Accessibility:</b> Easy access to worship content anytime, anywhere via a mobile-friendly platform.</p>
+                        <p><b>Hymn & Prayer Library:</b> Comprehensive collection of Catholic hymns and prayers with search functionality, favorites system, and text display optimized for reading during worship.</p>
                     </li>
                     <li>
                         <p><b>Community Support:</b> Unified space for shared devotion, fostering spiritual growth within the university community.</p>
@@ -115,7 +130,7 @@
                     </span>
                     <span>
                         <p>Industry:</p>
-                        <h4>Software</h4>
+                        <h4>Religious & Spiritual</h4>
                     </span>
                     <span>
                         <p>Year:</p>
@@ -125,28 +140,14 @@
                 <div class="btn" onclick="window.location.href='/pages/contact.html'" style="width: 170px;">
                     <span class="top"></span>
                     <span class="bottom"></span>
-                    <p>www.gohub.com <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    <p>github.com/MajestyChibuikem/Gohub <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                 </div>
             </div>
         </div>
         
-        <div class="more-images">
-            <div class="image1" style="margin-top: 25px;">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810162/temnix/Mobile_App_Screen_Mockup.png" alt="" loading="lazy">
-            </div>
-            <div class="image2">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810336/temnix/iPhone_15_Mockup_Perspective_1.png" alt="" style="transform: scaleX(-1);" loading="lazy">
-            </div>
-            <div class="image2">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810336/temnix/iPhone_15_Mockup_Perspective_1.png" alt="" loading="lazy">
-            </div>
-            <!-- <div class="image1">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810191/temnix/ayush-kumar-lnBmXFScV3c-unsplash.jpg" alt="" loading="lazy">
-            </div> -->
-        </div>
         <div class="final">
             <h2>Final Outcome</h2>
-            <p>The goal of Gohub is to create a centralized, digital platform that simplifies spiritual practices by providing easy access to organized prayers and hymns. By streamlining daily worship and fostering a sense of community, the app helps users stay consistent in their devotion while promoting deeper spiritual growth. Ultimately, Gohub aims to enhance the worship experience for Godfrey Okoye University and beyond, offering a modern, accessible tool that preserves tradition while embracing technology for a more connected and meaningful faith journey.</p>
+            <p>GoHub successfully provides Catholics with a portable, accessible worship companion that supports their spiritual life. By organizing prayers, hymns, and devotional content in an intuitive mobile interface, the app makes it easy for users to maintain their prayer practices regardless of location or internet connectivity. The offline-first architecture ensures reliability during church services or in areas with poor connectivity, while the organized structure helps users find appropriate content for daily devotions, Mass participation, and personal prayer time. This results in a practical tool that strengthens Catholic worship practices, supports liturgical participation, and provides a reliable resource for spiritual growth and daily devotion.</p>
         </div>
     </div>
     
@@ -164,7 +165,7 @@
                         <div class="btn">
                             <span class="top"></span>
                             <span class="bottom"></span>
-                            <p>View Projects <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                            <p>View Projects <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                         </div>
                     </a> 
                 </div>
@@ -178,7 +179,7 @@
                         <div class="btn" >
                             <span class="top"></span>
                             <span class="bottom"></span>
-                            <p>View Projects <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                            <p>View Projects <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                         </div>
                     </div> 
                 </div>
@@ -195,7 +196,7 @@
                 <div class="btn">
                     <span class="top"></span>
                     <span class="bottom"></span>
-                    <p>Contact Us <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810185/temnix/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810185/temnix/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
+                    <p>Contact Us <i><span><img src="img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
                 </div>
             </a>
         </div>
@@ -203,16 +204,16 @@
             
             <div class="left">
                 <div class="logo">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810396/temnix/temnix-logo.png" alt="Temnix Logo">
+                    <img src="img/temnix-logo.png" alt="Temnix Logo">
                     <p>.temnix</p>
                 </div>
                 <p>We specialize in crafting unique solutions that help brands make their mark. By combining creativity with strategy.</p>
                 <div class="socials">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810281/temnix/facebook.svg" alt="Facebook" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810341/temnix/instagram.svg" alt="Instagram" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810397/temnix/tiktok.svg" alt="TikTok" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810350/temnix/linkedin.svg" alt="LinkedIn" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810279/temnix/dribbble.svg" alt="Dribbble" loading="lazy">
+                    <img src="img/facebook.svg" alt="Facebook" loading="lazy">
+                    <img src="img/instagram.svg" alt="Instagram" loading="lazy">
+                    <img src="img/tiktok.svg" alt="TikTok" loading="lazy">
+                    <img src="img/linkedin.svg" alt="LinkedIn" loading="lazy">
+                    <img src="img/dribbble.svg" alt="Dribbble" loading="lazy">
                 </div>
             </div>
             <div class="right">

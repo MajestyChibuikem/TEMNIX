@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dio - Developer Collaboration Platform - Temnix</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_16,h_16,c_fill/v1761810396/temnix/temnix-logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_32,h_32,c_fill/v1761810396/temnix/temnix-logo.png">
@@ -17,12 +17,13 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="/css/project-details.css">
     <link rel="stylesheet" href="/responsive_css_files/project-details-responsive.css">
+    <link rel="stylesheet" href="/css/project-slider.css">
 </head>
 <body>
     <div class="top">
         <nav>
             <div class="logo" onclick="window.location.href='/index.html'">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810396/temnix/temnix-logo.png" alt="Temnix Logo">
+                <img src="img/temnix-logo.png" alt="Temnix Logo">
                 <p>temnix</p>
             </div>
             <div class="links">
@@ -32,7 +33,7 @@
                 <a href="/pages/contact.html">Contact</a>
                 <div class="drop-btn">
                     <a href="#">More</a>
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810172/temnix/angle-down.svg" alt="Dropdown arrow">
+                    <img src="img/angle-down.svg" alt="Dropdown arrow">
                     <div class="extra-nav">
                         <a href="/pages/error.html">Pricing</a>
                         <a href="/pages/error.html">Blogs</a>
@@ -40,17 +41,17 @@
                 </div>  
             </div>
             <div class="contact-btn">
-                <a href="pages/contact.html"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810200/temnix/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
+                <a href="pages/contact.html"><img src="img/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
                 <a href="/pages/contact.html" style="color: black;">
                     <div class="btn" onclick="window.location.href='/pages/contact.html'">
                         <span class="top"></span>
                         <span class="bottom"></span>
-                        <p>Contact <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        <p>Contact <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                     </div>
                 </a>
                 <div class="menu">
                     <div class="menu-btn" id="menubtn">
-                        <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810365/temnix/menu-svgrepo-com_1.svg" alt="Menu icon">
+                        <img src="img/menu-svgrepo-com (1).svg" alt="Menu icon">
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@
         
         <div class="hero">
             <div class="header">
-                <h1>DIONYSUS</h1>
+                <h1>DIO - DEVELOPER COLLABORATION PLATFORM</h1>
                 <p>A collaborative platform for developers to manage projects analyze meetings, track commits, and ask codebase-related questions with AI assistance.</p>
             </div>
         </div>
@@ -75,19 +76,22 @@
         <div class="btn" onclick="window.location.href='/pages/contact.html'" style="margin-top: 10px;">
             <span class="top"></span>
             <span class="bottom"></span>
-            <p>Contact <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+            <p>Contact <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
         </div>
     </div>
 
     <div class="project-details">
-        <div class="image">
-            <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810216/temnix/clean-browser-mockup_1.png" alt="Dionysus project screenshot" loading="lazy">
+        <div class="project-slider" id="dioSlider">
+            <div class="slider-container">
+                <div class="slider-images"></div>
+            </div>
+            <div class="slider-counter"></div>
         </div>
 
         <div class="project-content">
             <div class="left">
                 <h2>Project Overview</h2>
-                <p>Dionysus is an AI-powered developer collaboration tool designed to streamline project management and team communication. It integrates directly with GitHub, allowing teams to track commits, manage repositories, and visualize files effortlessly. With built-in Q&A, developers can ask code-related questions and get instant, context-aware answers based on the project’s codebase. Dionysus also supports meeting analysis, enabling users to upload and review discussions for actionable insights. Its intuitive dashboard brings everything together—documentation, project tracking, and team collaboration—making it easier for developers to stay organized, resolve issues quickly, and maintain a clear workflow for both small and large-scale projects.</p>
+                <p>Dio is a comprehensive developer collaboration platform that integrates GitHub repository management, AI-powered code assistance, and team communication tools. Built to streamline project workflows, Dio provides developers with intelligent code analysis, meeting transcription, and project tracking in one unified dashboard.</p>
 
                 <h2>Scope of Work</h2>
                 <p>Dionysus streamlines developer collaboration by integrating GitHub management, codebase Q&A, file visualization, and meeting analysis. It enhances workflow efficiency, improves team communication, and provides actionable insights, making it ideal for managing projects of any size with clarity and speed. <br><br>Outline of the services provided, such as strategy, design, development, branding, or marketing include:</p>
@@ -108,7 +112,7 @@
                 <div class="detail">
                     <span>
                         <p>Services:</p>
-                        <h4>Website Design</h4>
+                        <h4>Web Application Development</h4>
                     </span>
                     <span>
                         <p>Industry:</p>
@@ -122,28 +126,14 @@
                 <div class="btn" onclick="window.location.href='/pages/contact.html'">
                     <span class="top"></span>
                     <span class="bottom"></span>
-                    <p>www.dionysus.com <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    <p>github.com/MajestyChibuikem/dio <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                 </div>
             </div>
         </div>
         
-        <div class="more-images">
-            <div class="image1" style="margin-top: 25px;">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810191/temnix/ayush-kumar-lnBmXFScV3c-unsplash.jpg" alt="" loading="lazy">
-            </div>
-            <div class="image2">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810191/temnix/ayush-kumar-lnBmXFScV3c-unsplash.jpg" alt="" loading="lazy">
-            </div>
-            <div class="image2">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810191/temnix/ayush-kumar-lnBmXFScV3c-unsplash.jpg" alt="" loading="lazy">
-            </div>
-            <div class="image1">
-                <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810191/temnix/ayush-kumar-lnBmXFScV3c-unsplash.jpg" alt="" loading="lazy">
-            </div>
-        </div>
         <div class="final">
             <h2>Final Outcome</h2>
-            <p>The goal of Dionysus is to create a unified platform that simplifies developer collaboration and project management. By combining GitHub integration, AI-powered code assistance, and actionable analytics, the platform will enhance team productivity, reduce bottlenecks, and improve code quality. Ultimately, Dionysus aims to provide developers with a streamlined workflow where communication, version control, and project insights are centralized, enabling teams to deliver projects faster and more efficiently while maintaining transparency and clarity across every stage of development. This results in stronger collaboration, smarter decision-making, and a scalable solution for teams of all sizes</p>
+            <p>Dio successfully creates a unified platform that simplifies developer collaboration and project management. By combining GitHub integration, AI-powered code assistance, and actionable analytics, the platform enhances team productivity, reduces bottlenecks, and improves code quality. The intelligent Q&A system provides context-aware answers based on the project codebase, while meeting analysis tools help teams extract actionable insights from discussions. Ultimately, Dio provides developers with a streamlined workflow where communication, version control, and project insights are centralized, enabling teams to deliver projects faster and more efficiently while maintaining transparency and clarity across every stage of development.</p>
         </div>
     </div>
     
@@ -161,7 +151,7 @@
                         <div class="btn">
                             <span class="top"></span>
                             <span class="bottom"></span>
-                            <p>View Projects <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                            <p>View Projects <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                         </div>
                     </div> 
                 </div>
@@ -175,7 +165,7 @@
                         <div class="btn" >
                             <span class="top"></span>
                             <span class="bottom"></span>
-                            <p>View Projects <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810182/temnix/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                            <p>View Projects <i><span><img src="img/arrow-right.svg" alt="Arrow icon"><img src="img/arrow-right.svg" alt="Arrow icon"></span></i></p>
                         </div>
                     </div> 
                 </div>
@@ -192,7 +182,7 @@
                 <div class="btn">
                     <span class="top"></span>
                     <span class="bottom"></span>
-                    <p>Contact Us <i><span><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810185/temnix/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810185/temnix/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
+                    <p>Contact Us <i><span><img src="img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
                 </div>
             </a>
         </div>
@@ -200,16 +190,16 @@
             
             <div class="left">
                 <div class="logo">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810396/temnix/temnix-logo.png" alt="Temnix Logo">
+                    <img src="img/temnix-logo.png" alt="Temnix Logo">
                     <p>.temnix</p>
                 </div>
                 <p>We specialize in crafting unique solutions that help brands make their mark. By combining creativity with strategy.</p>
                 <div class="socials">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810281/temnix/facebook.svg" alt="Facebook" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810341/temnix/instagram.svg" alt="Instagram" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810397/temnix/tiktok.svg" alt="TikTok" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810350/temnix/linkedin.svg" alt="LinkedIn" loading="lazy">
-                    <img src="https://res.cloudinary.com/dulaczrnd/image/upload/v1761810279/temnix/dribbble.svg" alt="Dribbble" loading="lazy">
+                    <img src="img/facebook.svg" alt="Facebook" loading="lazy">
+                    <img src="img/instagram.svg" alt="Instagram" loading="lazy">
+                    <img src="img/tiktok.svg" alt="TikTok" loading="lazy">
+                    <img src="img/linkedin.svg" alt="LinkedIn" loading="lazy">
+                    <img src="img/dribbble.svg" alt="Dribbble" loading="lazy">
                 </div>
             </div>
             <div class="right">

@@ -1,12 +1,32 @@
+# API Keys and Secrets
 keys.txt
+
+# Cloudinary Scripts and Data
 retry-failed-uploads.js
 update-urls.js
 upload-to-cloudinary.js
 cloudinary-url-mapping.json
 fix-urls.js
+add-alt-text.js
+fix-navigation.js
+add-lazy-loading.js
+apply-all-fixes.js
+
+# SEO Helper Scripts (can be removed after use)
+create-sitemap.js
+add-google-verification.js
+
+# Documentation (optional - keep if you want to track changes)
+# CHANGES-APPLIED.md
+# IMPROVEMENTS.md
+
+# Backups
 backup_local_assets/
+
+# Node
 node_modules/
 package-lock.json
 package.json
-CHANGES-APPLIED.md
-IMPROVEMENTS.md
+
+# System Files
+.DS_Store
