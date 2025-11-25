@@ -752,8 +752,8 @@ body {
     margin-bottom: 20px;
 }
 .project-grid .card .image {
-    width: 600px;
-    height: 455px;
+    width: 400px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
@@ -762,9 +762,9 @@ body {
     justify-content: center;
 }
 .project-grid .card .image>img {
-    width: 850px;
-    margin-left: -100px;
-    margin-top: -20px;
+    width: 550px;
+    margin-left: -70px;
+    margin-top: -15px;
     transition: 500ms;
 }
 .project-grid .card .image .cont {
@@ -774,9 +774,9 @@ body {
     transform: translate(-50%, -50%);
 }
 .project-grid .card h3 {
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 500;
-    letter-spacing: -2.4px;
+    letter-spacing: -1.5px;
 }
 .project-grid .card>p {
     color: #4c4c4c;
@@ -784,8 +784,8 @@ body {
     letter-spacing: -0.4px;
     font-size: 14px;
     font-weight: 500;
-    width: 580px;
-    line-height: 22px;
+    width: 390px;
+    line-height: 20px;
 }
 .project-grid .card .image {
     background-color: #101010;
