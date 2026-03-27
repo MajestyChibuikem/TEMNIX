@@ -259,17 +259,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
             
 
-            gsap.from(".projects .header h3, .projects .header h2, .projects .header p, .projects .project-grid, .projects .filters", {
+            gsap.from(".projects .header h3, .projects .header h2, .projects .header p, .projects .filters", {
                 scrollTrigger: {
-                    trigger: ".projects .header, .projects",     // element to watch
-                    start: "top 90%",      // when element hits 80% of viewport
-                    toggleActions: "play none none none" 
-                    // play | pause | reverse | reset
+                    trigger: ".projects .header, .projects",
+                    start: "top 90%",
+                    toggleActions: "play none none none"
                     },
-                y: 100,// move from below       
-                opacity: 0,// start invisible
-                stagger: 0.3,   
+                y: 100,
+                opacity: 0,
+                stagger: 0.3,
                 duration: 1.5,
+                ease: "power3.out",
+            });
+
+            gsap.from(".projects .project-grid .card", {
+                scrollTrigger: {
+                    trigger: ".projects .project-grid",
+                    start: "top 95%",
+                    toggleActions: "play none none none"
+                    },
+                y: 80,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 1.2,
                 ease: "power3.out",
             });
         

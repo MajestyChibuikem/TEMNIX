@@ -285,8 +285,9 @@
         overflow: hidden;
     }
     .images .image1 img {
-        width: 130%;
-        margin-left: -100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .images .image2 {
         width: 100%;
@@ -294,8 +295,9 @@
         overflow: hidden;
     }
     .images .image2 img {
-        width: 150%;
-        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }    
     
     .awards {
@@ -1204,8 +1206,9 @@
         overflow: hidden;
     }
     .images .image1 img {
-        width: 130%;
-        margin-left: -100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .images .image2 {
         width: 40%;
@@ -1213,8 +1216,9 @@
         overflow: hidden;
     }
     .images .image2 img {
-        width: 150%;
-        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }    
     
     .awards {
@@ -2060,8 +2064,9 @@
         overflow: hidden;
     }
     .images .image1 img {
-        width: 900px;
-        margin-left: -100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .images .image2 {
         width: 500px;
@@ -2069,8 +2074,9 @@
         overflow: hidden;
     }
     .images .image2 img {
-        width: 900px;
-        margin-left: -250px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
@@ -2872,8 +2878,9 @@
         overflow: hidden;
     }
     .images .image1 img {
-        width: 900px;
-        margin-left: -100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .images .image2 {
         width: 500px;
@@ -2881,8 +2888,9 @@
         overflow: hidden;
     }
     .images .image2 img {
-        width: 900px;
-        margin-left: -250px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
@@ -3419,8 +3427,9 @@
         overflow: hidden;
     }
     .images .image1 img {
-        width: 900px;
-        margin-left: -100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .images .image2 {
         width: 500px;
@@ -3428,8 +3437,9 @@
         overflow: hidden;
     }
     .images .image2 img {
-        width: 900px;
-        margin-left: -250px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 

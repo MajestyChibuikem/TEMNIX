@@ -375,22 +375,24 @@ body {
     margin: 30px 180px;
 }
 .images .image1 {
-    width: 700px;
+    width: 60%;
     height: 550px;
     overflow: hidden;
 }
 .images .image1 img {
-    width: 900px;
-    margin-left: -100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .images .image2 {
-    width: 500px;
+    width: 40%;
     height: 550px;
     overflow: hidden;
 }
 .images .image2 img {
-    width: 900px;
-    margin-left: -250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
