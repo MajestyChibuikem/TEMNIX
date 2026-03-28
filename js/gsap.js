@@ -48,22 +48,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
             scrollTrigger: {
                 trigger: ".hero",     // element to watch
                 start: "top 80%",      // when element hits 80% of viewport
-                toggleActions: "play none none none" 
+                toggleActions: "play none none none"
                 // play | pause | reverse | reset
                 },
                 y: 100,       // move from below
                 opacity: 0,   // start invisible
                 duration: 1.0,
-                delay: 0.8,
+                delay: 0.4,
                 ease: "power3.out",
             });
             gsap.from(".hero .more .image img", {
             scrollTrigger: {
                 trigger: ".hero .more",     // element to watch
-                start: "top 90%", 
-                end: "top 10%",
-                scrub: true,     // when element hits 80% of viewport
-                // toggleActions: "play none none none" 
+                start: "top 95%",
+                end: "top 50%",
+                scrub: true,
+                // toggleActions: "play none none none"
                 // play | pause | reverse | reset
                 },
                 scale: 2,       // move from below
