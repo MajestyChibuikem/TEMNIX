@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Human — AI Email Client - Temnix</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_16,h_16,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_32,h_32,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_48,h_48,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_180,h_180,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_192,h_192,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_512,h_512,c_fill/v1761810396/temnix/temnix-logo.png">
+    <meta name="msapplication-TileColor" content="#101010">
+    <meta name="msapplication-TileImage" content="https://res.cloudinary.com/dulaczrnd/image/upload/w_144,h_144,c_fill/v1761810396/temnix/temnix-logo.png">
+    <meta name="theme-color" content="#101010">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/project-details.css">
+    <link rel="stylesheet" href="/responsive_css_files/project-details-responsive.css">
+</head>
+<body>
+    <div class="top">
+        <nav>
+            <div class="logo" onclick="window.location.href='/index.html'">
+                <img src="/img/temnix-logo.png" alt="Temnix Logo">
+                <p>temnix</p>
+            </div>
+            <div class="links">
+                <a href="/pages/about.html">About Us</a>
+                <a href="/pages/services.html">Services</a>
+                <a href="/pages/projects.html">Projects</a>
+                <a href="/pages/contact.html">Contact</a>
+                <div class="drop-btn">
+                    <a href="#">More</a>
+                    <img src="/img/angle-down.svg" alt="Dropdown arrow">
+                    <div class="extra-nav">
+                        <a href="/pages/error.html">Pricing</a>
+                        <a href="/pages/error.html">Blogs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-btn">
+                <a href="/pages/contact.html"><img src="/img/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
+                <a href="/pages/contact.html" style="color: black;">
+                    <div class="btn" onclick="window.location.href='/pages/contact.html'">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                        <p>Contact <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    </div>
+                </a>
+                <div class="menu">
+                    <div class="menu-btn" id="menubtn">
+                        <img src="/img/menu-svgrepo-com (1).svg" alt="Menu icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="header">
+                <h1>AI-POWERED EMAIL CLIENT</h1>
+                <p>A minimalistic, intelligent email client that puts AI at the center — from real-time writing suggestions to a chat interface that reasons over your entire inbox history.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-links" id="menulinks">
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/pages/error.html">Pricing</a>
+        <div class="btn" onclick="window.location.href='/pages/contact.html'" style="margin-top: 10px;">
+            <span class="top"></span>
+            <span class="bottom"></span>
+            <p>Contact <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+        </div>
+    </div>
+
+    <div class="project-details">
+        <img src="/img-projects/normal-human/landing.png" alt="Normal Human — AI Email Client" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 40px;">
+
+        <div class="project-content">
+            <div class="left">
+                <h2>Project Overview</h2>
+                <p>Normal Human is a full-stack SaaS email client that connects to Gmail via the Nylas API, indexes every message with OpenAI vector embeddings, and surfaces an AI copilot directly inside the compose window. It was built to solve a specific problem: existing email clients treat AI as a bolt-on feature. Normal Human puts AI at the center — from real-time writing suggestions to a chat interface that can reason over your entire inbox history.</p>
+
+                <p style="margin-top: 16px;">Built with <b>Next.js 14</b>, <b>Nylas v7</b>, <b>OpenAI GPT-4</b>, <b>Orama</b> (in-memory vector search), <b>Clerk</b>, and <b>Stripe</b> — the application is production-ready, subscription-gated, and deployable with a single database URL.</p>
+
+                <h2>Scope of Work</h2>
+                <p>We built the full product — email infrastructure, AI features, search engine, auth, payments, and UI. Every part of the stack was designed to work together as a cohesive, production-ready SaaS.<br><br>Key deliverables included:</p>
+
+                <ul>
+                    <li>
+                        <p><b>Gmail Integration via Nylas:</b> Full OAuth flow so users connect their inbox in one click. Incremental delta-sync with <code>nextDeltaToken</code> tracking keeps the database current without redundant full-fetches — scales to large mailboxes without hammering the API.</p>
+                    </li>
+                    <li>
+                        <p><b>Ask AI — RAG Inbox Chat:</b> Users chat with their entire inbox using GPT-4. Every email is embedded at sync time and stored in a persisted Orama binary index, enabling zero cold-start semantic retrieval — answers are context-aware and backed by the actual thread history.</p>
+                    </li>
+                    <li>
+                        <p><b>AI Compose & Copilot:</b> Full email drafting from a short prompt via GPT-3.5-turbo, plus ghost-text inline completions as the user types — accepted with a single Tab keypress. Both features stream tokens to the browser so AI feels instant.</p>
+                    </li>
+                    <li>
+                        <p><b>Hybrid Semantic Search:</b> Orama runs client-side with BM25 full-text search combined with 1536-dim cosine similarity search (threshold 0.80). The index persists across page reloads — no re-embedding on every visit.</p>
+                    </li>
+                    <li>
+                        <p><b>Stripe Subscription Billing:</b> Free tier (50 AI interactions/day) and premium tier (unlimited), with a complete funnel from landing page → auth → email connect → AI usage → upgrade prompt. Daily usage is tracked per user via a <code>ChatbotInteraction</code> model.</p>
+                    </li>
+                    <li>
+                        <p><b>Resizable Three-Panel UI:</b> Sidebar / thread list / reading pane with panel sizes persisted via cookies. TipTap rich-text compose editor with custom AI extensions, kbar command palette, and full dark/light mode theming.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="detail">
+                    <span>
+                        <p>Services:</p>
+                        <h4>AI Integration & SaaS Development</h4>
+                    </span>
+                    <span>
+                        <p>Industry:</p>
+                        <h4>Productivity / Email</h4>
+                    </span>
+                    <span>
+                        <p>Year:</p>
+                        <h4>2025</h4>
+                    </span>
+                </div>
+                <a href="https://github.com/MajestyChibuikem/normal-human" target="_blank" style="text-decoration: none;">
+                    <div class="btn">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                        <p>View on GitHub <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="screenshots" style="margin-top: 60px;">
+            <h2 style="margin-bottom: 24px;">Product Screenshots</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;">
+                <img src="/img-projects/normal-human/landing2.png" alt="Normal Human landing page" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/normal-human/inbox.png" alt="Inbox three-panel layout" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/normal-human/askAI.png" alt="Ask AI — RAG inbox chat" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/normal-human/compose.png" alt="AI compose and copilot suggestions" loading="lazy" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="final">
+            <h2>Results & Impact</h2>
+            <p>Normal Human delivered a complete, production-deployable SaaS email client — not a prototype. End-to-end type safety from PostgreSQL schema to UI via Prisma + tRPC + TypeScript means the codebase is maintainable at scale. AI features are deeply integrated into the email workflow, not isolated sidebars — the copilot lives inside the compose box, and inbox chat is one click away from any thread.</p>
+            <p style="margin-top: 16px;">The hybrid search experience — combining BM25 full-text with OpenAI semantic embeddings — finds emails by meaning, not just keywords. The delta sync architecture means the app scales to large mailboxes without performance degradation. With 6 major API integration surfaces, 15+ tRPC endpoints, and 50+ UI components, the platform is ready for real customers the moment keys are wired in.</p>
+        </div>
+    </div>
+
+    <div class="related-projects">
+        <div class="header">
+            <h3>MORE PROJECTS</h3>
+            <h2>Similar <span>projects</span></h2>
+        </div>
+
+        <div class="project-grid">
+            <div class="card">
+                <div class="image">
+                    <img src="/img-projects/dio/dashboard.png" alt="AI Developer Workspace" loading="lazy">
+                    <div class="cont" onclick="window.location.href='/projects/dionysus.html'">
+                        <div class="btn">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                            <p>View Project <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        </div>
+                    </div>
+                </div>
+                <h3>AI Developer Workspace</h3>
+                <p>Intelligent developer platform with AI code assistance, automated meeting analysis, and smart project tracking.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="/img-projects/ats/Dashboard.png" alt="AI Student Analytics" loading="lazy">
+                    <div class="cont" onclick="window.location.href='/projects/ats.html'">
+                        <div class="btn">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                            <p>View Project <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        </div>
+                    </div>
+                </div>
+                <h3>AI Student Analytics</h3>
+                <p>ML-powered platform predicting student outcomes and automating early intervention for an educational institution.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="header">
+            <h2>HAVE A PROJECT IN MIND?</h2>
+            <a href="/pages/contact.html" style="text-decoration: none;">
+                <div class="btn">
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                    <p>Contact Us <i><span><img src="/img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="/img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="mid">
+            <div class="left">
+                <div class="logo">
+                    <img src="/img/temnix-logo.png" alt="Temnix Logo">
+                    <p>.temnix</p>
+                </div>
+                <p>We build AI-powered automation that helps businesses scale smarter, move faster, and eliminate bottlenecks.</p>
+                <div class="socials">
+                    <img src="/img/facebook.svg" alt="Facebook" loading="lazy">
+                    <img src="/img/instagram.svg" alt="Instagram" loading="lazy">
+                    <img src="/img/tiktok.svg" alt="TikTok" loading="lazy">
+                    <img src="/img/linkedin.svg" alt="LinkedIn" loading="lazy">
+                    <img src="/img/dribbble.svg" alt="Dribbble" loading="lazy">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li onclick="window.location.href='/pages/projects.html'">Projects</li>
+                    <li onclick="window.location.href='/pages/services.html'">Services</li>
+                    <li onclick="window.location.href='/pages/contact.html'">Contact</li>
+                    <li onclick="window.location.href='/pages/about.html'">About Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &copy; Temnix, All rights reserved</p>
+            <p>Powered by Temnix</p>
+        </div>
+    </footer>
+
+    <script src="/gsap-public/minified/gsap.min.js"></script>
+    <script src="/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script src="/js/gsap.js"></script>
+</body>
+</html>
