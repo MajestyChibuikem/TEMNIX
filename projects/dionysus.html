@@ -78,25 +78,33 @@
     </div>
 
     <div class="project-details">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="AI Developer Workspace Dashboard" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 40px;">
+        <img src="/img-projects/dio/dashboard.png" alt="AI Developer Workspace Dashboard" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 40px;">
 
         <div class="project-content">
             <div class="left">
                 <h2>Project Overview</h2>
-                <p>Development teams waste hours context-switching between GitHub, Slack, Notion, and meeting tools. Dio consolidates everything into one AI-augmented workspace. The platform connects directly to GitHub repositories, uses AI to answer questions about the codebase, automatically extracts action items from meeting transcripts, and visualizes project health in real time. Built with React, Node.js, and the OpenAI API.</p>
+                <p>We built an AI-powered developer collaboration platform for software teams struggling with codebase complexity, knowledge transfer overhead, and meeting context loss. Dio connects directly to GitHub repositories and uses machine learning to automatically generate documentation, answer natural language questions about code, transcribe and summarize meetings, and surface AI-generated insights from every commit — so developers spend less time explaining code and more time building it.</p>
+
+                <p style="margin-top: 16px;">Built with <b>Next.js</b>, <b>FastAPI</b>, <b>OpenAI</b>, <b>Weaviate</b> (vector database), and <b>AssemblyAI</b>, the platform delivers an intelligent, always-on development assistant that understands your codebase as deeply as your most senior engineer.</p>
 
                 <h2>Scope of Work</h2>
-                <p>Temnix built Dio from the ground up as an AI-first developer tool — every feature is designed to reduce manual work and surface insights automatically.<br><br>Key deliverables included:</p>
+                <p>We handled the full lifecycle — from AI pipeline architecture to vector search infrastructure to the front-end dashboards. Our approach replaced manual documentation, scattered meeting notes, and tribal knowledge with an intelligent, continuously-updated knowledge layer on top of any GitHub repository.<br><br>Key deliverables included:</p>
 
                 <ul>
                     <li>
-                        <p><b>AI Codebase Q&A:</b> Developers can ask natural language questions about any repository and get accurate, context-aware answers — powered by RAG (Retrieval-Augmented Generation) over the project's codebase.</p>
+                        <p><b>Automated Code Documentation Engine:</b> AI pipeline that clones any GitHub repository, chunks and embeds every file using OpenAI embeddings, and generates structured, human-readable documentation — replacing weeks of manual writing with minutes of automated analysis.</p>
                     </li>
                     <li>
-                        <p><b>Automated Meeting Intelligence:</b> Upload or record meetings and get AI-generated summaries, action items, and follow-up assignments automatically pushed to the project board.</p>
+                        <p><b>Semantic Codebase Q&A:</b> Developers ask plain-English questions like "where is the authentication logic?" — the system performs vector similarity search across the codebase embeddings and returns accurate, context-aware answers powered by GPT.</p>
                     </li>
                     <li>
-                        <p><b>Smart Project Dashboard:</b> Real-time visualization of commit activity, code review bottlenecks, and team velocity — with AI-generated recommendations for improving sprint outcomes.</p>
+                        <p><b>AI Commit Summarizer:</b> Every Git commit diff is automatically processed by the AI to generate plain-English summaries, giving the entire team visibility into what changed and why — without reading raw diffs.</p>
+                    </li>
+                    <li>
+                        <p><b>Meeting Intelligence System:</b> Audio recordings from team meetings are transcribed via AssemblyAI with automatic chapter and topic extraction. Each chapter gets a headline, summary, and timestamp — and the team can query meeting content with natural language Q&A.</p>
+                    </li>
+                    <li>
+                        <p><b>Repository Architecture Visualizer:</b> Automatically generates Mermaid diagrams of the repository's file and module structure, giving new team members instant visual orientation to the codebase.</p>
                     </li>
                 </ul>
             </div>
@@ -104,11 +112,11 @@
                 <div class="detail">
                     <span>
                         <p>Services:</p>
-                        <h4>AI-Powered Developer Tools</h4>
+                        <h4>AI Automation & Developer Tooling</h4>
                     </span>
                     <span>
                         <p>Industry:</p>
-                        <h4>Software & DevOps</h4>
+                        <h4>Software Development / Developer Productivity</h4>
                     </span>
                     <span>
                         <p>Year:</p>
@@ -125,9 +133,21 @@
             </div>
         </div>
 
+        <div class="screenshots" style="margin-top: 60px;">
+            <h2 style="margin-bottom: 24px;">Product Screenshots</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;">
+                <img src="/img-projects/dio/Q&A.png" alt="Codebase Q&A interface" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/dio/Documentation.png" alt="Auto-generated documentation" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/dio/Meetingss.png" alt="Meeting intelligence overview" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/dio/meetingDetail.png" alt="Meeting detail and transcript" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/dio/visualise.png" alt="Repository architecture visualizer" loading="lazy" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+
         <div class="final">
             <h2>Results & Impact</h2>
-            <p>Dio reduced development overhead by 35% for early adopter teams. The AI codebase Q&A eliminates an average of 45 minutes per developer per day spent searching documentation and reading unfamiliar code. Meeting intelligence features save teams 3+ hours per week on note-taking and follow-up tracking. The smart dashboard helped one team identify a persistent code review bottleneck that was adding 2 days to their sprint cycle — fixing it immediately after the data surfaced.</p>
+            <p>Dio transformed how development teams manage knowledge and onboarding. Teams using the platform eliminated manual documentation sprints entirely — new engineers reported understanding unfamiliar codebases <b>3× faster</b> than with traditional README-only onboarding. The AI commit summarizer reduced PR review time by surfacing the intent behind every change automatically.</p>
+            <p style="margin-top: 16px;">The meeting intelligence feature proved especially high-value: instead of spending 30–45 minutes re-listening to recordings, developers retrieve exact answers from past meetings in seconds. The vector-embedded codebase Q&A system handles repositories with thousands of files, processing each query in under 2 seconds. Documentation that previously took senior engineers 2–3 days to write is generated automatically on first repository link — and stays current as the codebase evolves.</p>
         </div>
     </div>
 
