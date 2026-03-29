@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyTree — AI-Powered Campus Marketplace - Temnix</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_16,h_16,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_32,h_32,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_48,h_48,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_180,h_180,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_192,h_192,c_fill/v1761810396/temnix/temnix-logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://res.cloudinary.com/dulaczrnd/image/upload/w_512,h_512,c_fill/v1761810396/temnix/temnix-logo.png">
+    <meta name="msapplication-TileColor" content="#101010">
+    <meta name="msapplication-TileImage" content="https://res.cloudinary.com/dulaczrnd/image/upload/w_144,h_144,c_fill/v1761810396/temnix/temnix-logo.png">
+    <meta name="theme-color" content="#101010">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/project-details.css">
+    <link rel="stylesheet" href="/responsive_css_files/project-details-responsive.css">
+</head>
+<body>
+    <div class="top">
+        <nav>
+            <div class="logo" onclick="window.location.href='/index.html'">
+                <img src="/img/temnix-logo.png" alt="Temnix Logo">
+                <p>temnix</p>
+            </div>
+            <div class="links">
+                <a href="/pages/about.html">About Us</a>
+                <a href="/pages/services.html">Services</a>
+                <a href="/pages/projects.html">Projects</a>
+                <a href="/pages/contact.html">Contact</a>
+                <div class="drop-btn">
+                    <a href="#">More</a>
+                    <img src="/img/angle-down.svg" alt="Dropdown arrow">
+                    <div class="extra-nav">
+                        <a href="/pages/error.html">Pricing</a>
+                        <a href="/pages/error.html">Blogs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-btn">
+                <a href="/pages/contact.html"><img src="/img/cart.svg" alt="Shopping cart icon" style="padding-right: 10px;">Cart</a>
+                <a href="/pages/contact.html" style="color: black;">
+                    <div class="btn" onclick="window.location.href='/pages/contact.html'">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                        <p>Contact <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    </div>
+                </a>
+                <div class="menu">
+                    <div class="menu-btn" id="menubtn">
+                        <img src="/img/menu-svgrepo-com (1).svg" alt="Menu icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="header">
+                <h1>AI-POWERED CAMPUS MARKETPLACE</h1>
+                <p>Six Claude AI integrations built into a campus ecommerce platform — from intelligent buyer support and fraud detection to automated dispute resolution and seller tooling.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-links" id="menulinks">
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/pages/error.html">Pricing</a>
+        <div class="btn" onclick="window.location.href='/pages/contact.html'" style="margin-top: 10px;">
+            <span class="top"></span>
+            <span class="bottom"></span>
+            <p>Contact <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+        </div>
+    </div>
+
+    <div class="project-details">
+        <img src="/img-projects/buytree/landing.png" alt="BuyTree Campus Marketplace" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 40px;">
+
+        <div class="project-content">
+            <div class="left">
+                <h2>Project Overview</h2>
+                <p>BuyTree is a full-stack campus marketplace platform built for Nigerian university students — connecting student sellers with campus buyers for peer-to-peer commerce. The platform runs on Express, React, and PostgreSQL. We were brought in to layer a complete AI intelligence system on top of the existing product, integrating six distinct Claude API features that improve the experience for buyers, sellers, and platform admins simultaneously.</p>
+
+                <p style="margin-top: 16px;">All six features share a single backend AI service built on the <b>Anthropic SDK</b>, with a unified architecture: structured inputs, consistent JSON outputs, graceful fallbacks, and rate limiting. AI failures never block core platform actions — every integration is designed to enhance, not gatekeep.</p>
+
+                <h2>Scope of Work</h2>
+                <p>We designed and implemented six AI features across the full stack — backend services, database schema, API endpoints, and frontend components. Each feature targets a different pain point in the marketplace workflow.<br><br>Key deliverables included:</p>
+
+                <ul>
+                    <li>
+                        <p><b>AI Buyer Support Chatbot:</b> A floating chat widget on all buyer-facing pages powered by Claude Haiku. The bot is order-aware — it fetches the buyer's last 5 orders and injects them as context, so it can answer "where is my order?" without the buyer providing an order number. Scoped strictly to BuyTree: policies, checkout guidance, dispute escalation. Stateless on the server — conversation history lives in React state.</p>
+                    </li>
+                    <li>
+                        <p><b>AI Product Description Writer:</b> Sellers click "Generate with AI" on the product creation form — Claude Sonnet writes a concise, student-market-tuned product description from just the name, price, and category. Sellers accept, edit, or ignore it. Eliminates the blank-page problem that causes thin, unconvincing listings.</p>
+                    </li>
+                    <li>
+                        <p><b>Auto-Categorization:</b> As the seller types a product name, Claude Haiku suggests the correct category from BuyTree's fixed taxonomy in real time (600ms debounce). Returns a confidence level — only high and medium confidence suggestions surface to the seller. Reduces miscategorization and speeds up listing creation.</p>
+                    </li>
+                    <li>
+                        <p><b>Review Authenticity Detection:</b> Every submitted review is asynchronously scored by Claude for authenticity signals — generic text, rating/sentiment mismatch, promotional language, bot patterns. Flagged reviews surface in the admin dashboard with specific flag reasons. Non-blocking: the review saves and returns to the user immediately; AI analysis runs in the background.</p>
+                    </li>
+                    <li>
+                        <p><b>Bypass Detection:</b> A background cron job runs every 6 hours, analyzing order patterns for signs that sellers and buyers are completing transactions off-platform to avoid the 5% fee. Claude evaluates pre-filtered suspicious patterns (cancellation clusters, phone numbers in seller notes, repeat-pair cancellations) and assigns risk levels. High-risk flags trigger an admin email alert.</p>
+                    </li>
+                    <li>
+                        <p><b>Automated Dispute Triage:</b> When a buyer opens a dispute, Claude Sonnet reads the full context — both parties' histories, order status timeline, delivery evidence, and prior disputes — and produces a structured triage report: summary, likely fault, suggested resolution, confidence score, and flags. Admins resolve disputes in a fraction of the time, with the AI recommendation pre-populated for one-click acceptance.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="detail">
+                    <span>
+                        <p>Services:</p>
+                        <h4>AI Integration & Platform Automation</h4>
+                    </span>
+                    <span>
+                        <p>Industry:</p>
+                        <h4>E-Commerce / Marketplace</h4>
+                    </span>
+                    <span>
+                        <p>Year:</p>
+                        <h4>2025</h4>
+                    </span>
+                </div>
+                <a href="https://github.com/MajestyChibuikem/BuyTree" target="_blank" style="text-decoration: none;">
+                    <div class="btn">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                        <p>View on GitHub <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="screenshots" style="margin-top: 60px;">
+            <h2 style="margin-bottom: 24px;">Product Screenshots</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;">
+                <img src="/img-projects/buytree/landing2.png" alt="BuyTree marketplace homepage" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/buytree/secondSection.png" alt="Product listings and AI features" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/buytree/third.png" alt="Seller tools and AI description writer" loading="lazy" style="width: 100%; border-radius: 8px;">
+                <img src="/img-projects/buytree/last.png" alt="Admin dashboard with AI triage and fraud flags" loading="lazy" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="final">
+            <h2>Results & Impact</h2>
+            <p>The six-feature AI layer transformed BuyTree from a standard marketplace into an intelligent platform. The dispute triage system cut admin resolution time significantly — instead of manually reading through order histories, admins receive a structured AI report with a recommended action the moment a dispute opens. The bypass detection job gave the platform its first automated revenue protection mechanism, catching off-platform transaction patterns that were previously invisible.</p>
+            <p style="margin-top: 16px;">On the seller side, the description writer and auto-categorization reduced listing friction — products get created faster and land in the right categories without manual correction. The review authenticity system gave admins visibility into fake review patterns for the first time. All six features were built with a shared guardrail: AI enhances every workflow but never blocks it. Every feature degrades gracefully, ensuring platform reliability regardless of API availability.</p>
+        </div>
+    </div>
+
+    <div class="related-projects">
+        <div class="header">
+            <h3>MORE PROJECTS</h3>
+            <h2>Similar <span>projects</span></h2>
+        </div>
+
+        <div class="project-grid">
+            <div class="card">
+                <div class="image">
+                    <img src="/img-projects/normal-human/landing.png" alt="Normal Human — AI Email Client" loading="lazy">
+                    <div class="cont" onclick="window.location.href='/projects/normal-human.html'">
+                        <div class="btn">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                            <p>View Project <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Normal Human — AI Email Client</h3>
+                <p>AI-native SaaS email client with GPT-4 inbox chat, semantic search, and real-time copilot suggestions.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="/img-projects/dio/dashboard.png" alt="AI Developer Workspace" loading="lazy">
+                    <div class="cont" onclick="window.location.href='/projects/dionysus.html'">
+                        <div class="btn">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                            <p>View Project <i><span><img src="/img/arrow-right.svg" alt="Arrow icon"><img src="/img/arrow-right.svg" alt="Arrow icon"></span></i></p>
+                        </div>
+                    </div>
+                </div>
+                <h3>AI Developer Workspace</h3>
+                <p>Intelligent developer platform with AI code assistance, automated meeting analysis, and smart project tracking.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="header">
+            <h2>HAVE A PROJECT IN MIND?</h2>
+            <a href="/pages/contact.html" style="text-decoration: none;">
+                <div class="btn">
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                    <p>Contact Us <i><span><img src="/img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"><img src="/img/arrow-up-right-svgrepo-com.svg" alt="Arrow icon"></span></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="mid">
+            <div class="left">
+                <div class="logo">
+                    <img src="/img/temnix-logo.png" alt="Temnix Logo">
+                    <p>.temnix</p>
+                </div>
+                <p>We build AI-powered automation that helps businesses scale smarter, move faster, and eliminate bottlenecks.</p>
+                <div class="socials">
+                    <img src="/img/facebook.svg" alt="Facebook" loading="lazy">
+                    <img src="/img/instagram.svg" alt="Instagram" loading="lazy">
+                    <img src="/img/tiktok.svg" alt="TikTok" loading="lazy">
+                    <img src="/img/linkedin.svg" alt="LinkedIn" loading="lazy">
+                    <img src="/img/dribbble.svg" alt="Dribbble" loading="lazy">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li onclick="window.location.href='/pages/projects.html'">Projects</li>
+                    <li onclick="window.location.href='/pages/services.html'">Services</li>
+                    <li onclick="window.location.href='/pages/contact.html'">Contact</li>
+                    <li onclick="window.location.href='/pages/about.html'">About Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Designed by <a href="https://temnix.com" style="color: inherit; text-decoration: underline;">temnix.com</a></p>
+            <p>Copyright &copy; Temnix, All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="/gsap-public/minified/gsap.min.js"></script>
+    <script src="/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script src="/js/gsap.js"></script>
+</body>
+</html>
