@@ -161,35 +161,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 ease: "power3.out",
             });
         
-            ScrollTrigger.matchMedia({
-                // Only run this animation for desktop (screen width >= 1024px)
-                "(min-width: 686px)": function () {
-                    let tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: ".about-us .more-content",
-                        start: "bottom 90%",
-                        end: "+=330vh",
-                        scrub: true,
-                        pin: ".about-us .more-content .video-wrapper", // Pin wrapper, not video
-                        anticipatePin: 1,
-                        // markers: true // Uncomment for debugging
-                    }
-                    });
-
-                    tl.to(".bg-video", { y: "0vh", duration: 4 })
-                    .to(".bg-video", {
-                        scale: 2.4,
-                        y: "10vh",
-                        duration: 2,
-                        transformOrigin: "center center"
-                    });
-                },
-
-                // When the screen width is less than 1024px, kill the animation
-                "(max-width: 685px)": function () {
-                    console.log("GSAP animation disabled on smaller screens");
-                }
-            });
+            // Video pin animation removed — section was reordered and the
+            // scroll-pin caused the video to overlap subsequent sections.
         
             gsap.from(".services-section .header h3", {
                 scrollTrigger: {
