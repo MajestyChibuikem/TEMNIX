@@ -696,6 +696,8 @@
         overflow: hidden;
         margin-bottom: 10px;
         transition: 300ms;
+        border-radius: 12px;
+        cursor: pointer;
     }
     .project-grid .card .image>img {
         width: 100%;
@@ -705,9 +707,10 @@
     }
     .project-grid .card .image .cont {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .project-grid .card h3 {
         font-size: 30px;
@@ -2331,6 +2334,8 @@
         overflow: hidden;
         margin-bottom: 10px;
         transition: 300ms;
+        border-radius: 12px;
+        cursor: pointer;
     }
     .project-grid .card .image>img {
         width: 100%;
@@ -2340,9 +2345,10 @@
     }
     .project-grid .card .image .cont {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .project-grid .card h3 {
         font-size: 30px;
@@ -3934,6 +3940,8 @@
         overflow: hidden;
         margin-bottom: 10px;
         transition: 300ms;
+        border-radius: 12px;
+        cursor: pointer;
     }
     .project-grid .card .image>img {
         width: 100%;
@@ -3943,9 +3951,10 @@
     }
     .project-grid .card .image .cont {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .project-grid .card h3 {
         font-size: 35px;
@@ -5524,6 +5533,8 @@
         overflow: hidden;
         margin-bottom: 10px;
         transition: 300ms;
+        border-radius: 12px;
+        cursor: pointer;
     }
     .project-grid .card .image>img {
         width: 100%;
@@ -5533,9 +5544,10 @@
     }
     .project-grid .card .image .cont {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .project-grid .card h3 {
         font-size: 35px;
@@ -6572,6 +6584,8 @@
         overflow: hidden;
         margin-bottom: 10px;
         transition: 300ms;
+        border-radius: 12px;
+        cursor: pointer;
     }
     .project-grid .card .image>img {
         width: 100%;
@@ -6581,9 +6595,10 @@
     }
     .project-grid .card .image .cont {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-grid .card>p {
