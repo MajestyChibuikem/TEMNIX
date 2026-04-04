@@ -1350,7 +1350,53 @@
     .prev-clients .partners .partner img{
         width: 70px;
     }
-    
+
+    /* WHY AUTOMATE — mobile */
+    .why-automate {
+        padding: 60px 20px;
+    }
+    .why-automate__header {
+        margin-bottom: 40px;
+    }
+    .why-automate__header h2 {
+        font-size: 32px;
+        letter-spacing: -1.5px;
+        line-height: 1.15;
+        margin-bottom: 12px;
+    }
+    .why-automate__header p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .why-automate__grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .why-automate__card {
+        padding: 28px 20px;
+    }
+    .why-automate__card-head {
+        gap: 14px;
+        margin-bottom: 12px;
+    }
+    .why-automate__card-head span {
+        height: 36px;
+        width: 36px;
+        min-width: 36px;
+    }
+    .why-automate__card-head span img {
+        width: 16px;
+        height: 16px;
+    }
+    .why-automate__card-head h3 {
+        font-size: 17px;
+        letter-spacing: -0.5px;
+    }
+    .why-automate__card p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
     .faq {
         margin: 100px 20px;
         display: flex;
