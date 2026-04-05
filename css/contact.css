@@ -393,6 +393,17 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.contact-form .header .direct-email {
+    font-family: Inter;
+    font-size: 14px;
+    color: #6c6c6c;
+    margin-top: 8px;
+}
+.contact-form .header .direct-email a {
+    color: #101010;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 .contact-form .form {
     display: flex;
     justify-content: center;
